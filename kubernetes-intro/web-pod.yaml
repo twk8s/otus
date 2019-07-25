@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-server
+  labels:
+    key: value
+spec:
+  containers:
+  - name: web-server
+    image: twk8s/homework:my-apache2
+    ports:
+    - containerPort: 8000
